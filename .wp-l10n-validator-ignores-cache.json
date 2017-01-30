@@ -1,0 +1,13 @@
+{
+    "\/includes\/functions.php": {
+        "WordPoints_Democracy_Poll_Hook_Arg_Voter": {
+            "58": {
+                "name": "array",
+                "type": "unknown",
+                "args_started": true,
+                "arg_count": 0,
+                "parentheses": 1
+            }
+        }
+    }
+}

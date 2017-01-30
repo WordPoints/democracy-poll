@@ -1,0 +1,35 @@
+{
+    "files": {
+        "\/classes\/hook\/arg\/voter.php": {
+            "size": 394,
+            "hash": "854237cf7bacb7ec7bea70f7398060d0",
+            "errors": false
+        },
+        "\/classes\/hook\/event\/vote.php": {
+            "size": 747,
+            "hash": "00936dd068c9ac03d9c0de9da9323029",
+            "errors": false
+        },
+        "\/classes\/index.php": {
+            "size": 335,
+            "hash": "ac89b3745c99f40266081728317dcb0a",
+            "errors": false
+        },
+        "\/democracy-poll.php": {
+            "size": 1892,
+            "hash": "18dc7e412ef124d5c83ffb04431ca504",
+            "errors": false
+        },
+        "\/includes\/actions.php": {
+            "size": 348,
+            "hash": "7f20645e18a2b18405ebd36f6516c033",
+            "errors": false
+        },
+        "\/includes\/functions.php": {
+            "size": 1290,
+            "hash": "c1cd74926d6687b2e2db70db6e4eb911",
+            "errors": false
+        }
+    },
+    "config_signature": "6edb19c4cc745d76da553bd33764bb70"
+}

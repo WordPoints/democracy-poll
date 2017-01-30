@@ -19,7 +19,7 @@ class WordPoints_Democracy_Poll_Hook_Arg_Voter
 	 * @since 1.0.0
 	 */
 	public function get_title() {
-		return __( 'Voter', 'wordpoints' );
+		return __( 'Voter', 'wordpoints-democracy-poll' );
 	}
 }
 

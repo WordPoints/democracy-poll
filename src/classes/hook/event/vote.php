@@ -20,21 +20,21 @@ class WordPoints_Democracy_Poll_Hook_Event_Vote
 	 * @since 1.0.0
 	 */
 	public function get_title() {
-		return __( 'Vote in Poll', 'wordpoints' );
+		return __( 'Vote in Poll', 'wordpoints-democracy-poll' );
 	}
 
 	/**
 	 * @since 1.0.0
 	 */
 	public function get_description() {
-		return __( 'When a user votes in a poll created with Democracy Poll.', 'wordpoints' );
+		return __( 'When a user votes in a poll created with Democracy Poll.', 'wordpoints-democracy-poll' );
 	}
 
 	/**
 	 * @since 1.0.0
 	 */
 	public function get_reversal_text() {
-		return __( 'Vote retracted.', 'wordpoints' );
+		return __( 'Vote retracted.', 'wordpoints-democracy-poll' );
 	}
 }
 
