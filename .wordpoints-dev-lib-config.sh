@@ -11,7 +11,7 @@ install-democracy-poll() {
 # Sets up custom configuration.
 function wordpoints-dev-lib-config() {
 
-	alias setup-phpunit="\setup-phpunit; install-democracy-poll"
+	alias setup-phpunit="composer self-update; \setup-phpunit; install-democracy-poll"
 }
 
 # EOF
