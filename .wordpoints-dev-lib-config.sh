@@ -4,7 +4,7 @@
 install-democracy-poll() {
 
 	mkdir -p /tmp/wordpress/src/wp-content/plugins/democracy-poll
-	curl -s https://downloads.wordpress.org/plugin/democracy-poll.5.3.4.6.zip > /tmp/democracy-poll.zip
+	curl -s https://downloads.wordpress.org/plugin/democracy-poll.zip > /tmp/democracy-poll.zip
 	unzip /tmp/democracy-poll.zip -d /tmp/wordpress/src/wp-content/plugins/
 }
 
