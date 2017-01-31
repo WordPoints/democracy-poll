@@ -84,7 +84,7 @@ class WordPoints_Democracy_Poll_Hook_Event_Vote_Test extends WordPoints_PHPUnit_
 
 		try {
 
-			Dem::init()->ajax_request_handler();
+			@Dem::init()->ajax_request_handler();
 
 		} catch ( WordPoints_PHPUnit_Exception $e ) {
 			unset( $e );
@@ -106,7 +106,7 @@ class WordPoints_Democracy_Poll_Hook_Event_Vote_Test extends WordPoints_PHPUnit_
 
 		try {
 
-			Dem::init()->ajax_request_handler();
+			@Dem::init()->ajax_request_handler();
 
 		} catch ( WordPoints_PHPUnit_Exception $e ) {
 			unset( $e );
