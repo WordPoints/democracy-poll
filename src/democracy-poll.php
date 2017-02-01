@@ -20,7 +20,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  * ---------------------------------------------------------------------------------|
  *
- * @package Democracy_Poll
+ * @package WordPoints_Democracy_Poll
  * @version 1.0.0
  * @author  J.D. Grimes <jdg@codesymphony.co>
  * @license GPLv2+
