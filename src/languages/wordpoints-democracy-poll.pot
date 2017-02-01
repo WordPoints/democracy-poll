@@ -1,0 +1,29 @@
+# Copyright (C) 2017 J.D. Grimes
+# This file is distributed under the same license as the WordPoints Democracy Poll package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPoints Democracy Poll 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-31 21:53:59+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: classes/hook/arg/voter.php:22
+msgid "Voter"
+msgstr ""
+
+#: classes/hook/event/vote.php:23
+msgid "Vote in Poll"
+msgstr ""
+
+#: classes/hook/event/vote.php:30
+msgid "When a user votes in a poll created with Democracy Poll."
+msgstr ""
+
+#: classes/hook/event/vote.php:37
+msgid "Vote retracted."
+msgstr ""
