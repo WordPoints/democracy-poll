@@ -47,7 +47,7 @@ class WordPoints_Democracy_Poll_Hook_Event_Vote_Test extends WordPoints_PHPUnit_
 		add_action( 'wp_redirect', array( $this, 'throw_exception' ) );
 
 		// Prevent the Dem_Tinymce class from being loaded a second time with
-		// require.
+		// require. This was fixed in 5.3.6.
 		DemAdminInit::$opt['tinymce_button'] = false;
 
 		try {
