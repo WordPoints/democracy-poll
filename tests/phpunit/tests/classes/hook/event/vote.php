@@ -46,13 +46,22 @@ class WordPoints_Democracy_Poll_Hook_Event_Vote_Test extends WordPoints_PHPUnit_
 
 		add_action( 'wp_redirect', array( $this, 'throw_exception' ) );
 
+		// Back-compat with pre 5.4.2.
+		if ( class_exists( 'Democracy_Poll' ) ) {
+			$class = 'Democracy_Poll';
+			$admin_class = 'Democracy_Poll_Admin';
+		} else {
+			$class = 'Dem';
+			$admin_class = '\DemAdminInit';
+		}
+
 		// Prevent the Dem_Tinymce class from being loaded a second time with
 		// require. This was fixed in 5.3.6.
-		DemAdminInit::$opt['tinymce_button'] = false;
+		$admin_class::$opt['tinymce_button'] = false;
 
 		try {
 
-			$dem_admin = new DemAdminInit();
+			$dem_admin = new $admin_class();
 			$dem_admin->insert_poll(
 				array(
 					'question' => 'Is this a test?',
@@ -84,7 +93,7 @@ class WordPoints_Democracy_Poll_Hook_Event_Vote_Test extends WordPoints_PHPUnit_
 
 		try {
 
-			@Dem::init()->ajax_request_handler();
+			@$class::init()->ajax_request_handler(); // @codingStandardsIgnoreLine
 
 		} catch ( WordPoints_PHPUnit_Exception $e ) {
 			unset( $e );
@@ -106,7 +115,12 @@ class WordPoints_Democracy_Poll_Hook_Event_Vote_Test extends WordPoints_PHPUnit_
 
 		try {
 
-			@Dem::init()->ajax_request_handler();
+			// Back-compat with pre 5.4.2.
+			if ( class_exists( 'Democracy_Poll' ) ) {
+				@Democracy_Poll::init()->ajax_request_handler(); // @codingStandardsIgnoreLine
+			} else {
+				@Dem::init()->ajax_request_handler(); // @codingStandardsIgnoreLine
+			}
 
 		} catch ( WordPoints_PHPUnit_Exception $e ) {
 			unset( $e );
