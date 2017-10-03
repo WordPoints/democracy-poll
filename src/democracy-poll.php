@@ -26,20 +26,20 @@
  * @license GPLv2+
  */
 
-WordPoints_Modules::register(
+wordpoints_register_extension(
 	'
-		Module Name: Democracy Poll
-		Author:      J.D. Grimes
-		Author URI:  https://codesymphony.co/
-		Module URI:  https://wordpoints.org/module/democracy-poll/
-		Version:     1.0.0
-		License:     GPLv2+
-		Description: Integrates with the Democracy Poll plugin, to award points for taking polls.
-		Text Domain: wordpoints-democracy-poll
-		Domain Path: /languages
-		Channel:     wordpoints.org
-		ID:          988
-		Namespace:   Democracy_Poll
+		Extension Name: Democracy Poll
+		Author:         J.D. Grimes
+		Author URI:     https://codesymphony.co/
+		Extension URI:  https://wordpoints.org/extensions/democracy-poll/
+		Version:        1.0.0
+		License:        GPLv2+
+		Description:    Integrates with the Democracy Poll plugin, to award points for taking polls.
+		Text Domain:    wordpoints-democracy-poll
+		Domain Path:    /languages
+		Server:         wordpoints.org
+		ID:             988
+		Namespace:      Democracy_Poll
 	'
 	, __FILE__
 );
