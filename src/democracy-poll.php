@@ -21,7 +21,7 @@
  * ---------------------------------------------------------------------------------|
  *
  * @package WordPoints_Democracy_Poll
- * @version 1.0.0
+ * @version 1.0.1
  * @author  J.D. Grimes <jdg@codesymphony.co>
  * @license GPLv2+
  */
@@ -32,7 +32,7 @@ wordpoints_register_extension(
 		Author:         J.D. Grimes
 		Author URI:     https://codesymphony.co/
 		Extension URI:  https://wordpoints.org/extensions/democracy-poll/
-		Version:        1.0.0
+		Version:        1.0.1
 		License:        GPLv2+
 		Description:    Integrates with the Democracy Poll plugin, to award points for taking polls.
 		Text Domain:    wordpoints-democracy-poll
